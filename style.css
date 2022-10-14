@@ -16,7 +16,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
 }
-.column-left {
+.column {
   position: relative;
   border: 1px solid white;
   background-color: white;
@@ -178,4 +178,83 @@ html {
 .song-list__screen:first-child {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.now-playing__cover {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  margin: 30px 0px 40px 0px;
+}
+.now-playing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.now-playing__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.now-playing__singer {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.now-playing__length {
+  position: absolute;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 10px 0px;
+  margin-top: 20px;
+  align-items: center;
+}
+.length__already,
+.length__total {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.length__already {
+  width: 43%;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 5px solid rgba(0, 0, 0, 1);
+}
+.length__total {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 55%;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+.now-playing-lengthbox {
+  display: flex;
+  justify-content: center;
+}
+.fa-circle {
+  position: absolute;
+  left: 42%;
+  bottom: 18%;
+}
+
+.under-maincontrol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+  padding: 20px 20px;
+}
+.maincontrol__rotate {
+  width: 8%;
+  opacity: 0.5;
+}
+.maincontrol__play {
+  background-color: black;
+  padding: 15px 12px 15px 15px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+.maincontrol__shuffle {
+  width: 8%;
+  opacity: 0.5;
 }
