@@ -17,6 +17,7 @@ html {
   align-items: center;
 }
 .column-left {
+  position: relative;
   border: 1px solid white;
   background-color: white;
   height: 80vh;
@@ -125,4 +126,41 @@ html {
   position: absolute;
   right: 10px;
   opacity: 0.4;
+}
+.under-controller {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  left: 6%;
+  bottom: 2%;
+  width: 90%;
+  height: 7%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.under__left {
+  margin-left: 20px;
+}
+.under__singer {
+  opacity: 0.5;
+  font-size: small;
+  font-weight: 600;
+}
+.under__title {
+  font-weight: 600;
+  font-size: 15px;
+}
+.under__right {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.under__play,
+.under__next,
+.under__before {
+  color: white;
 }
