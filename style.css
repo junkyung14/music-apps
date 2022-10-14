@@ -1,0 +1,128 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;900&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column-box {
+  background-color: whitesmoke;
+  display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.column-left {
+  border: 1px solid white;
+  background-color: white;
+  height: 80vh;
+  width: 20%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.head-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 20px 20px;
+}
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.musician-pic {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 1px 5px;
+  border-radius: 50%;
+}
+.singer-name {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: x-large;
+}
+.singer-genre {
+  font-weight: 600;
+  margin: 10px 0px;
+  opacity: 0.4;
+}
+.main-screen__interact {
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+.main-screen__shuffle {
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  height: 30px;
+}
+.main-screen__heart-box {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  height: 30px;
+}
+.fa-heart {
+  margin: 0px 4px;
+}
+.song-list {
+  width: 100%;
+  overflow-x: hidden;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.song-list__screen:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.song-list__screen {
+  position: relative;
+  align-items: center;
+  border: 1px solid white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 90%;
+  display: flex;
+  padding: 3px 10px;
+  margin: 5px 10px;
+}
+.song-list__column-left {
+  display: flex;
+  align-items: center;
+}
+.song-list__song-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.song-list__list {
+  margin-left: 10px;
+}
+.songlist__singer {
+  font-size: xx-small;
+  opacity: 0.4;
+  font-weight: 600;
+}
+.songlist__title {
+  font-size: 13px;
+  font-weight: 600;
+}
+.fa-ellipsis-v {
+  position: absolute;
+  right: 10px;
+  opacity: 0.4;
+}
